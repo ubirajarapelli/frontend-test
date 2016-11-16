@@ -1,0 +1,255 @@
+@import "_variables.scss";
+@import "_mixin.scss";
+@import "_grid.scss";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+p{
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  line-height: 1.45em;
+  color: $text;
+}
+
+p + p {
+  margin-top: 1.25em;
+}
+
+.container{
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+  @include clearfix;
+}
+header{
+  margin-bottom: 2.5em;
+  // height: 100px;
+}
+.menu{
+  padding: .625em 0;
+  background: $header-background;
+  border-bottom: thin solid $border;
+}
+.logo {
+  @include col(2);
+  img {
+    top: 0;
+    width: 150px;
+    height: 110px;
+    position: absolute;
+    background: $bg-default;
+    box-shadow: 0 0 10px lighten(#000, 80%);
+    max-width: 100%;
+    text-align: center;
+    top: -.625em;
+  }
+}
+.main-menu{
+  @include col(8);
+  @include push(2);
+  line-height: 2.2em;
+}
+.menu-item {
+  display: inline;
+  font-size: 16px;
+  font-weight: 500;
+  border-right: thin solid $text;
+  &::before,
+  &::after{
+    content: '';
+    display: inline-block;
+    padding: 0 .6em;
+  }
+  a{
+    color: $text;
+    text-decoration: none;
+  }
+}
+
+.button{
+  width: 100%;
+  padding: .5em;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  color: $text-button;
+  background-color: $orange;
+
+}
+.breadcrumb {
+  padding: 1em 0;
+}
+.bread {
+  @include col(6);
+  @include push(2);
+}
+.bread-item {
+  display: inline;
+  font-size: 12px;
+  &::before{
+    display: inline-block;
+    vertical-align: middle;
+    content: url('../images/svgs/seta.svg');
+  }
+  &:first-child::before{
+    content: '';
+  }
+  a{
+    color: $text;
+    text-decoration: none;
+  }
+}
+
+.submenu {
+  @include col(3);
+  border: thin solid $border;
+  padding: .9em;
+  h3{
+    font-size: 1em;
+    font-weight: 400;
+    color: $orange;
+    padding-bottom: .625em;
+    border-bottom: thin solid $border;
+  }
+  dt{
+    margin-top: 1.25em;
+    font-weight: 700;
+    color: $blue;
+    &::before{
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 10px solid $orange;
+    }
+  }
+  dd{
+    margin: .625em 0;
+    font-weight: 300;
+    //font-size: 14px;
+    font-size: .875em;
+  }
+  a{
+    text-decoration: none;
+    color: $text;
+  }
+}
+main{
+    @include col(6)
+    //margin-bottom: 1.25em;
+    h2 {
+      padding-bottom: 1em;
+      border-bottom: thin solid $border;
+      font-size: 1.25em;
+      font-weight: 400;
+      color: $pink;
+
+    }
+}
+aside{
+  @include col(3);
+  margin-bottom: 1.25em;
+  h2 {
+    padding-bottom: 1em;
+    border-bottom: thin solid $border;
+    font-size: 1.25em;
+    font-weight: 400;
+    color: $pink;
+
+  }
+  img{
+    margin-top: 1.25em;
+    @include border-radius(7px);
+  }
+}
+
+.call-action{
+  @include col(2);
+}
+
+.slideshow {
+  @include col(9);
+  margin-bottom: 2.5em;
+}
+.ccc {
+  margin-bottom: 2.5em;
+}
+
+.banner {
+  @include col(9);
+  padding: 2.5em 0;
+  position: relative;
+  span{
+    position: absolute;
+    bottom: 2.8em;
+    display: block;
+    width: 100%;
+    padding: .625em 0;
+    color: $text-button;
+    text-align: center;
+    background: rgba(0,0,0,.6);
+  }
+}
+
+.box {
+  @include col(3);
+  min-height: 155px;
+  padding: 1.142em;
+  font-size: 0.875em;
+  text-align: center;
+  border: thin solid $orange;
+  img {
+    height: 48px;
+    border: medium solid $pink;
+    border-radius: 50%;
+  }
+}
+
+.radius {
+  @include border-radius(3px, 2px, solid, $pink);
+}
+
+footer{
+  background-color: $header-background;
+  padding-top: 2.5em;
+  h4 {
+    margin-bottom: 1em;
+    font-size: 1.25em;
+    font-weight: 400;
+    color: $text;
+  }
+  h6 {
+    margin-bottom: 1.25em;
+    font-size: 1em;
+    font-weight: 600;
+    color: $text;
+  }
+}
+.footer-list{
+  @include col(2);
+  ul{
+    margin-bottom: 0em;
+    &:nth-child(1){
+      margin-top: 2.6em;
+    }
+  }
+  li{
+    font-size: .8125em;
+    line-height: 1.6em;
+    list-style-type: none;
+  }
+  a{
+    color: $text;
+    text-decoration: none;
+  }
+}
