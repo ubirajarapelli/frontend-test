@@ -1,0 +1,38 @@
+.submenu {
+  @include col(3);
+  border: thin solid $border;
+  padding: .9em;
+  h3{
+    font-size: 1em;
+    font-weight: 400;
+    color: $orange;
+    padding-bottom: .625em;
+    border-bottom: thin solid $border;
+  }
+  dt{
+    margin-top: 1.25em;
+    font-weight: 700;
+    color: $blue;
+    &::before{
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 10px solid $orange;
+    }
+  }
+  dd{
+    margin: .625em 0;
+    font-weight: 300;
+    //font-size: 14px;
+    font-size: .875em;
+  }
+  a{
+    text-decoration: none;
+    color: $text;
+  }
+}

@@ -1,0 +1,88 @@
+.header{
+  margin-bottom: 2.5em; }
+
+.menu{
+  padding: .625em 0;
+  background: $header-background;
+  border-bottom: thin solid $border;
+}
+.logo {
+  @include col(2);
+  img {
+    top: 0;
+    width: 120px;
+    padding: .625em 1.562em;
+    position: absolute;
+    background: $bg-default;
+    box-shadow: 0 0 10px lighten(#000, 80%);
+    max-width: 100%;
+    text-align: center;
+    top: -.625em;
+  }
+}
+.main-menu{
+  @include col(8);
+  @include push(2);
+  line-height: 2.2em;
+}
+.menu-item {
+  display: inline;
+  font-size: 16px;
+  font-weight: 500;
+  &::before{
+    content: '';
+    padding-right: 1.2em;
+  }
+  &::after{
+    content: '|';
+    display: inline-block;
+    height: 32px;
+    vertical-align: top;
+    padding-left: 1.2em;
+    color: $text;
+  }
+  &:last-child::after{
+    display: none;
+  }
+  a{
+    color: $text;
+    text-decoration: none;
+  }
+}
+.button{
+  width: 100%;
+  padding: .5em;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  color: $text-button;
+  background-color: $orange;
+  cursor: pointer;
+  transition: background .8s;
+  &:hover{
+    background-color: darken($orange, 10%);
+  }
+}
+.breadcrumb {
+  padding: 1em 0;
+}
+.bread {
+  @include col(6);
+  @include push(2);
+}
+.bread-item {
+  display: inline;
+  font-size: 12px;
+  &::before{
+    display: inline-block;
+    vertical-align: middle;
+    content: url('../images/svgs/seta.svg');
+  }
+  &:first-child::before{
+    content: '';
+  }
+  a{
+    color: $text;
+    text-decoration: none;
+  }
+}

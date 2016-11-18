@@ -1,0 +1,49 @@
+.content-info{
+  @include col(6)}
+.second-info{
+  @include col(3);
+  margin-bottom: 1.25em;
+  img{
+    margin-top: 1.25em;
+    @include border-radius(7px);}
+}
+.title-content{
+  padding-bottom: 1em;
+  border-bottom: thin solid $border;
+  font-size: 1.25em;
+  font-weight: 400;
+  color: $pink;}
+.call-action{
+  @include col(2);}
+.slideshow {
+  @include col(9);
+  margin-bottom: 2.5em;
+  img {
+    height: 244px; }
+}
+.ads {
+  @include col(3);
+  margin-bottom: 2.5em;
+  img{
+    height: 244px;}
+}
+.banner {
+  @include col(9);
+  padding: 2.5em 0;
+  position: relative;
+  span{
+    position: absolute;
+    bottom: 2.8em;
+    display: block;
+    width: 100%;
+    padding: .625em 0;
+    color: $text-button;
+    text-align: center;
+    background: rgba(0,0,0,.6);}
+}
+.border {
+  border: thin solid $text;}
+.border-radius {
+  @include border-radius(3px, 2px, solid, $pink);}
+.excerpt {
+  @include excerpt;}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +9,13 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="header">
     <nav class="menu" role="navigation">
       <div class="container">
-        <div class="logo">
-          <img src="images/svgs/logo.svg" alt="Logotipo">
+        <div class="logo" role="">
+          <a href="">
+            <img src="images/svgs/logo.svg" alt="Imagem de Lâmpada colorida">
+          </a>
         </div>
         <div class="main-menu">
           <ul>
@@ -40,10 +42,10 @@
   </header>
   <div class="container">
     <div class="slideshow" role="presentation">
-      <img src="images/city-700x245.jpg" alt="">
+      <img class="border" src="images/city-700x245.jpg" alt="Ponte de São Francisco - USA">
     </div>
-    <div class="ccc" role="presentation">
-      <img class="radius" src="images/nature-220x250.jpg" alt="">
+    <div class="ads" role="presentation">
+      <img class="border-radius" src="images/nature-220x250.jpg" alt="imagem de árvores no por do sol">
     </div>
     <nav class="submenu" role="navigation">
       <h3>Áestigulum</h3>
@@ -65,68 +67,121 @@
         <dd><a href="">Erat egestas</a></dd>
       </dl>
     </nav>
-    <main>
-      <h2>Étiam enim massa</h2>
+    <main class="content-info" role="contentinfo">
+      <h2 class="title-content">Étiam enim massa</h2>
       <p>Maecenas ut ante posuere, ultrices diam ut, tempus mauris. Nam tincidunt nisl dui, id porta dui ornare vel.
         Phasellus ac lectus eu metus accumsan elementum fringilla sed felis.</p>
-
       <p>Nam dui lacus, blandit sit amet aliquam at, lobortis ut mauris. Pellentesque scelerisque velit eu varius ultrices.
         Curabitur viverra, erat sit amet auctor suscipit, massa lectus dictum erat, imperdiet lobortis mauris diam nec lacus.
         Proin lacinia</p>
     </main>
-    <aside>
-      <h2>Suspendisse et</h2>
-      <img src="images/cats-220x150.jpg" alt="">
-    </aside>
+    <div class="second-info" role="presentation">
+      <h2 class="title-content">Suspendisse et</h2>
+      <img src="images/cats-220x150.jpg" alt="Imagem de um gato">
+    </div>
     <div class="banner" role="presentation">
-      <img src="images/food-700x200.jpg" alt="">
+      <img src="images/food-700x200.jpg" alt="Imagem de pães franceses">
       <span>Etiam sagittis nisi risus, vitae finibus ligula aliquam sit amet.</span>
     </div>
     <div class="box">
-      <img src="images/svgs/sucesso.svg" alt="">
+        <img src="images/svgs/sucesso.svg" alt="Icone de Acerto">
       <p>Ùonec laoreet sem id vehicula vehicula.</p>
     </div>
     <div class="box">
-      <img src="images/svgs/erro.svg" alt="">
+      <img src="images/svgs/erro.svg" alt="Icone de erro">
       <p>Mauris non congue justo, ut convallis purus. Vestibulum ligula.</p>
     </div>
     <div class="box">
-      <img src="images/svgs/editar.svg" alt="">
-      <p>Morbi augue tellus, viverra vestibulum felis et, eleifend consectetur ipsum felis et, eleifend.</p>
+      <span class="round">
+        <img src="images/svgs/editar.svg" alt="Icone de lápis">
+      </span>
+      <p class="excerpt">Morbi augue tellus, viverra vestibulum felis et, eleifend consectetur ipsum felis et, eleifend.</p>
     </div>
   </div><!-- /container -->
-  <footer>
+  <footer class="footer" role="">
     <div class="container">
-      <h4>Áuctor commod</h4>
-      <nav class="footer-list">
-        <h6>Consectetur</h6>
-        <ul>
-          <li><a href="">ÁLorem Item 1</a></li>
-          <li><a href="">Item 2</a></li>
-          <li><a href="">Lorem 3</a></li>
-          <li><a href="">Domus item 4</a></li>
-          <li><a href="">Domuçs 5</a></li>
-        </ul>
-        <p><a href="">All things</a></p>
-      </nav>
-      <nav class="footer-list">
-        <ul>
-          <li><a href="">Lorem Item 7</a></li>
-          <li><a href="">Item 8</a></li>
-          <li><a href="">Lorem 9</a></li>
-        </ul>
-      </nav>
-      <nav class="footer-list">
-        <h6>Vestibulum</h6>
-        <ul>
-          <li><a href="">ÁLorem Item 1</a></li>
-          <li><a href="">Item 2</a></li>
-          <li><a href="">Lorem 3</a></li>
-          <li><a href="">Domus item 4</a></li>
-        </ul>
-      </nav>
-    </div>
-
+      <section class="service-list">
+        <h4 class="title-footer">Áuctor commod</h4>
+        <nav class="footer-list">
+          <h6 class="subtitle-footer">Consectetur</h6>
+          <ul>
+            <li><a href="">ÁLorem Item 1</a></li>
+            <li><a href="">Item 2</a></li>
+            <li><a href="">Lorem 3</a></li>
+            <li><a href="">Domus item 4</a></li>
+            <li><a href="">Domuçs 5</a></li>
+          </ul>
+          <p><a class="general-link" href="">All things</a></p>
+        </nav>
+        <nav class="footer-list">
+          <ul>
+            <li><a href="">Lorem Item 7</a></li>
+            <li><a href="">Item 8</a></li>
+            <li><a href="">Lorem 9</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-list">
+          <h6 class="subtitle-footer">Vestibulum</h6>
+          <ul>
+            <li><a href="">ÁLorem Item 1</a></li>
+            <li><a href="">Item 2</a></li>
+            <li><a href="">Lorem 3</a></li>
+            <li><a href="">Domus item 4</a></li>
+          </ul>
+          <p><a class="general-link" href="">All things</a></p>
+        </nav>
+      </section>
+      <section class="group-list">
+        <h4 class="title-footer">Pellentesque</h4>
+        <section class="group-logo">
+          <ul>
+            <li><a href="">
+              <img src="images/logos/logo-01.png" alt="Logotipo Boho"></a></li>
+            <li><a href="">
+              <img src="images/logos/logo-03.png" alt="Logotipo Indie"></a></li>
+            <li><a href="">
+              <img src="images/logos/logo-01.png" alt="Logotipo Boho"></a></li>
+          </ul>
+        </section>
+        <section class="group-logo">
+          <ul>
+            <li><a href="">
+              <img src="images/logos/logo-02.png" alt="Logotipo Boho Badges"></a>
+            </li>
+            <li><a href="">
+              <img src="images/logos/logo-04.png" alt="Logotipo Simple"></a>
+            </li>
+            <li><a href="">
+              <img src="images/logos/logo-06.png" alt="Logotipo Bohemian"></a>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <hr>
+      <section class="footer-nav">
+        <nav class="footer-menu-left">
+          <ul>
+            <li class="menu-item"><a href="">Dorem ipsum</a></li>
+            <li class="menu-item"><a href="">Dolor</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-menu-right">
+          <ul>
+            <li class="menu-item"><a href="">Consectetur</a></li>
+            <li class="menu-item"><a href="">Tempus mauris a</a></li>
+            <li class="menu-item"><a href="">Phasellus in</a></li>
+          </ul>
+        </nav>
+      </section>
+    </div><!-- / container -->
   </footer>
+  <div class="signature" role="complementary">
+    <div class="container">
+      <div class="sign-content">
+        <p>9999©Ut urna ligula, pretium ut elit dapibus, ornare tempus leo. Suspendisse augue massa
+        Donec in maximus metus. suspendisse volutpat ornare congue.</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

@@ -1,0 +1,27 @@
+.box {
+  @include col(3);
+  height: 160px;
+  margin-bottom: 5em;
+  padding: 1.142em 1.666em;
+  font-size: .875em;
+  text-align: center;
+  border: thin solid $orange;
+  img {
+    width: 56px;
+    height: 56px;}
+  p{
+    line-height: 1.3em;}
+  .round{
+    display: block;
+    margin: 0 auto;
+    width: 58px;
+    height: 58px;
+    border: solid medium $pink;
+    border-radius: 50%;
+    img{
+      width: 36px;
+      height: 36px;
+      padding: 1em 0 0 0;
+    }
+  }
+}

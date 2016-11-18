@@ -1,3 +1,6 @@
+/*
+* Colors variables
+*/
 $bg-default: #ffffff;
 $text-button: #ffffff;
 $text: #898989;
@@ -6,3 +9,12 @@ $header-background: #eeeeee;
 $orange: #f7941e;
 $pink: #ec007a;
 $blue: #20b7ce;
+
+/*
+* Grid variables
+*/
+$column-width: 60;
+$gutter-width: 20;
+$columns: 12;
+$gridsystem-width: (($column-width * $columns) + ($gutter-width * $columns) * 1);
+$total-width: 960px;

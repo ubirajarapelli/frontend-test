@@ -1,0 +1,33 @@
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;}
+
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;}
+
+  p{
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    line-height: 1.45em;
+    color: $text;}
+
+  p + p { margin-top: 1.25em;}
+
+  hr{
+    width: 940px;
+    display: block;
+    height: 1px;
+    margin: 1.875em auto;
+    border: none;
+    background: $border;
+    clear: both;}
+
+  .container{
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+    @include clearfix;}

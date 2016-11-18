@@ -1,0 +1,108 @@
+.footer{
+  background-color: $header-background;
+  padding-top: 2.5em;
+}
+.title-footer {
+  margin-bottom: 1em;
+  font-size: 1.25em;
+  font-weight: 400;
+  color: $text;
+}
+.subtitle-footer {
+  margin-bottom: 1.25em;
+  font-size: 1em;
+  font-weight: 700;
+  color: $text;
+}
+.service-list{
+  @include row(8);
+  &:first-child nav{
+    margin-left: 0;}
+}
+.group-list{
+  h4{
+    margin-bottom: 1.875em;
+  }
+  @include row(4);
+}
+.footer-list{
+  @include col(2);
+  ul{
+    min-height: 110px;
+    margin-bottom: 2.5em;
+    &:nth-child(1){
+      margin-top: 2.6em;
+    }
+  }
+  li{
+    font-size: .8125em;
+    line-height: 1.6em;
+    list-style-type: none;
+  }
+  a{
+    color: $text;
+    text-decoration: none;
+  }
+  .general-link {
+    font-size: .8125em;
+    font-weight: 700;
+    text-decoration: underline;
+    &:hover{
+      text-decoration: none;
+    }
+    &::after{
+      content: url(../images/svgs/seta.svg);
+      display: inline;
+      vertical-align: text-top;
+      width: 8px;
+      padding-left: .615em;
+    }
+  }
+}
+.group-logo{
+  &:first-child {
+    margin-left: -10px;
+  }
+  &:last-child {
+    margin-right: -10px;
+  }
+  text-align: center;
+  @include col(2);
+  li{
+    height: 60px;
+    margin-bottom: 1.25em;
+    list-style-type: none;
+  }
+}
+.footer-nav{
+  @include row(12);
+  margin-bottom: 1.875em;
+}
+.footer-menu-left {
+  @include col(3);
+  @extend %left;
+  text-align: left;
+  .menu-item{
+    font-size: 13px;
+  }
+}
+.footer-menu-right {
+  @include col(5);
+  @include push(4);
+  @extend %right;
+  text-align: right;
+  .menu-item{
+    font-size: 13px;
+  }
+}
+.signature {
+  padding: 1.875em 0 5em 0;
+  font-weight: 600;
+  font-size: .8125em;
+  text-align: center;
+  background: $border;
+}
+.sign-content {
+  @include col(8);
+  @include push(2);
+}
