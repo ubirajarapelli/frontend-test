@@ -15,7 +15,6 @@ function showMessage(text) {
     bubble.removeAttribute('class')
     bubble.innerHTML = ''
   },2500)
-
 }
 
 nome.addEventListener('blur', function() {
@@ -52,11 +51,8 @@ fone.addEventListener('blur', function() {
 fone.addEventListener('keypress', function() {
   var elem = this
   var exec = function(val) {
-    //Remove tudo o que não é dígito
     val = val.replace(/\D/g,"")
-    //Coloca parênteses em volta dos dois primeiros dígitos
     val = val.replace(/^(\d{2})(\d)/g,"($1) $2")
-    //Coloca hífen entre o quarto e o quinto dígitos
     val = val.replace(/(\d)(\d{4})$/,"$1-$2")
     return val
   }
@@ -85,13 +81,18 @@ contactForm.addEventListener('submit', function(event) {
   var contactListLength = contactList.length
   var ul = document.createElement("ul")
   for (var i = 0; i < contactListLength; i++) {
+    console.log(contactList[i]);
+    if(contactList[i] == ''){
+      showMessage('Preencha todos os campos')
+      return true
+    }
     var li = document.createElement("li")
     var textlist = document.createTextNode(contactList[i])
     li.appendChild(textlist)
     ul.appendChild(li)
-    var div = document.querySelector(".contact-list").appendChild(ul)
-    nome.value = '';
-    fone.value = '';
-    email.value = '';
   }
+  var div = document.querySelector(".contact-list").appendChild(ul)
+  nome.value = '';
+  fone.value = '';
+  email.value = '';
 })
