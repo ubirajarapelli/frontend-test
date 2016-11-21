@@ -50,18 +50,7 @@
   }
 }
 .button{
-  width: 100%;
-  padding: .5em;
-  font-size: 16px;
-  border: none;
-  border-radius: 3px;
-  color: $text-button;
-  background-color: $orange;
-  cursor: pointer;
-  transition: background .8s;
-  &:hover{
-    background-color: darken($orange, 10%);
-  }
+  @include button(100%, $orange, $text-button);
 }
 .breadcrumb {
   padding: 1em 0;

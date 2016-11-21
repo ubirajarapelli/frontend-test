@@ -9,11 +9,14 @@ body {
   font-size: 16px;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;}
 
-  p{
-    margin-top: 1.25em;
-    margin-bottom: 1.25em;
-    line-height: 1.45em;
-    color: $text;}
+a img{
+  border: hidden;}
+
+p{
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  line-height: 1.45em;
+  color: $text;}
 
   p + p { margin-top: 1.25em;}
 

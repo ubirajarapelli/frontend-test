@@ -1,0 +1,63 @@
+.content-info-form,
+.contact-list{
+  @include col(9);
+  margin-bottom: 2.5em;
+}
+.contact-list{
+  ul{
+    margin: 1.25em 0;
+    color: $text;
+  }
+  ul + ul {
+    margin-top: 1.25em;
+  }
+  li{
+    list-style-type: none;
+  }
+}
+form{
+  margin-top: 1.25em;}
+sup{
+  color: $pink;}
+
+span{
+  display: block;
+  font-size: .8em;
+  padding-bottom: 1.25em;
+  font-weight: 700;
+  color: $text;}
+
+label{
+  display: block;
+  margin-bottom: .625em;
+  color: $text;}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"]{
+  width: 600px;
+  padding: .5em;
+  margin-bottom: 1em;
+  font-size: 1em;
+  color: $text;
+  clear: both;}
+
+.button-save{
+  @include button(20%, $blue, $text-button);
+}
+.button-cancel{
+  @include button(20%, $pink, $text-button);
+}
+#bubble{
+  display: none;
+  width: 60%;
+  height: 60px;
+  font-size: .875em;
+  color: $orange;
+}
+#bubble.showing{
+  display: block;
+}
+.invalid{
+  outline: thin solid $wrong;
+}

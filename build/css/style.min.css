@@ -21,6 +21,9 @@ body {
   font-size: 16px;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
 
+a img {
+  border: hidden; }
+
 p {
   margin-top: 1.25em;
   margin-bottom: 1.25em;
@@ -145,7 +148,8 @@ hr {
   width: 220px;
   margin: 0 10px;
   border: thin solid #c9c9c9;
-  padding: .9em; }
+  padding: .9em;
+  margin-bottom: 1.25em; }
   .submenu h3 {
     font-size: 1em;
     font-weight: 400;
@@ -274,6 +278,91 @@ hr {
       height: 50px;
       width: 100%;
       z-index: 1; } }
+
+.content-info-form,
+.contact-list {
+  display: inline-block;
+  float: left;
+  width: 700px;
+  margin: 0 10px;
+  margin-bottom: 2.5em; }
+
+.contact-list ul {
+  margin: 1.25em 0;
+  color: #898989; }
+
+.contact-list ul + ul {
+  margin-top: 1.25em; }
+
+.contact-list li {
+  list-style-type: none; }
+
+form {
+  margin-top: 1.25em; }
+
+sup {
+  color: #ec007a; }
+
+span {
+  display: block;
+  font-size: .8em;
+  padding-bottom: 1.25em;
+  font-weight: 700;
+  color: #898989; }
+
+label {
+  display: block;
+  margin-bottom: .625em;
+  color: #898989; }
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  width: 600px;
+  padding: .5em;
+  margin-bottom: 1em;
+  font-size: 1em;
+  color: #898989;
+  clear: both; }
+
+.button-save {
+  width: 20%;
+  padding: .5em;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  color: #ffffff;
+  background-color: #20b7ce;
+  cursor: pointer;
+  transition: background .8s; }
+  .button-save:hover {
+    background-color: #1990a2; }
+
+.button-cancel {
+  width: 20%;
+  padding: .5em;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  color: #ffffff;
+  background-color: #ec007a;
+  cursor: pointer;
+  transition: background .8s; }
+  .button-cancel:hover {
+    background-color: #b90060; }
+
+#bubble {
+  display: none;
+  width: 60%;
+  height: 60px;
+  font-size: .875em;
+  color: #f7941e; }
+
+#bubble.showing {
+  display: block; }
+
+.invalid {
+  outline: thin solid #dc0a0a; }
 
 .box {
   display: inline-block;

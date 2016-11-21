@@ -1,3 +1,17 @@
+@mixin button ($width, $button-color, $text-button-color){
+    width: $width;
+    padding: .5em;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    color: $text-button-color;
+    background-color: $button-color;
+    cursor: pointer;
+    transition: background .8s;
+    &:hover{
+      background-color: darken($button-color, 10%);
+    }
+}
 @mixin border-radius ($radius, $width: null, $style: null, $color: null){
   border: $style $width $color;
   border-radius: $radius;

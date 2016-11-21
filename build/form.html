@@ -41,12 +41,6 @@
     </nav>
   </header>
   <div class="container">
-    <div class="slideshow" role="presentation">
-      <img class="border" src="images/city-700x245.jpg" alt="Ponte de São Francisco - USA">
-    </div>
-    <div class="ads" role="presentation">
-      <img class="border-radius" src="images/nature-220x250.jpg" alt="imagem de árvores no por do sol">
-    </div>
     <nav class="submenu" role="navigation">
       <h3>Áestigulum</h3>
       <dl>
@@ -67,37 +61,28 @@
         <dd><a href="">Erat egestas</a></dd>
       </dl>
     </nav>
-    <main class="content-info" role="main">
+    <main class="content-info-form" role="main">
       <h2 class="title-content">Étiam enim massa</h2>
-      <p>Maecenas ut ante posuere, ultrices diam ut, tempus mauris. Nam tincidunt nisl dui, id porta dui ornare vel.
-        Phasellus ac lectus eu metus accumsan elementum fringilla sed felis.</p>
-      <p>Nam dui lacus, blandit sit amet aliquam at, lobortis ut mauris. Pellentesque scelerisque velit eu varius ultrices.
-        Curabitur viverra, erat sit amet auctor suscipit, massa lectus dictum erat, imperdiet lobortis mauris diam nec lacus.
-        Proin lacinia</p>
+      <form class="contact-form" role="form" action="" method="post">
+        <span>Campos com <sup>*</sup> são de preenchimento obrigatório</span>
+        <span id="bubble" class=""></span>
+        <label for="nome">Nome<sup>*</sup></label>
+        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+
+        <label for="fone">Telefone<sup>*</sup></label>
+        <input type="tel" id="fone" name="fone" required placeholder="(xx)xxxxx-xxxx" maxlength="15">
+
+        <label for="email">e-Mail<sup>*</sup></label>
+        <input type="email" id="email" name="email" required placeholder="email@domain.com">
+
+        <input type="reset" class="button-cancel" name="limpar" value="Cancelar">
+        <input type="submit" class="button-save" name="enviar" value="Salvar">
+      </form>
     </main>
-    <div class="second-info" role="presentation">
+    <section class="contact-list">
       <h2 class="title-content">Suspendisse et</h2>
-      <img src="images/cats-220x150.jpg" alt="Imagem de um gato">
-    </div>
-    <div class="banner" role="presentation">
-      <img src="images/food-700x200.jpg" alt="Imagem de pães franceses">
-      <span>Etiam sagittis nisi risus, vitae finibus ligula aliquam sit amet.</span>
-    </div>
-    <div class="box">
-        <img src="images/svgs/sucesso.svg" alt="Icone de Acerto">
-      <p>Ùonec laoreet sem id vehicula vehicula.</p>
-    </div>
-    <div class="box">
-      <img src="images/svgs/erro.svg" alt="Icone de erro">
-      <p>Mauris non congue justo, ut convallis purus. Vestibulum ligula.</p>
-    </div>
-    <div class="box">
-      <span class="round">
-        <img src="images/svgs/editar.svg" alt="Icone de lápis">
-      </span>
-      <p class="excerpt">Morbi augue tellus, viverra vestibulum felis et, eleifend consectetur ipsum felis et, eleifend.</p>
-    </div>
-  </div><!-- /container -->
+    </section>
+  </div>
   <footer class="footer" role="">
     <div class="container">
       <section class="service-list">
@@ -183,5 +168,19 @@
       </div>
     </div>
   </div>
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/form.js"></script>
 </body>
 </html>
+
+
+
+
+  <!--// $(function(){
+  //     var regExp = /^\w*(\.\w*)?@\w*\.[a-z]+(\.[a-z]+)?$/;
+  //     $('[type="email"]').on('keyup', function() {
+  //       $('.message').hide();
+  //       regExp.test( $(this).val() ) ? $('.message.success').show() : $('.message.error').show();
+  //     });
+  //   });-->
